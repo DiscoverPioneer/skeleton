@@ -19,6 +19,13 @@
 		09109ECA18831C7F0028FF86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09109EB218831C7F0028FF86 /* UIKit.framework */; };
 		09109ED218831C7F0028FF86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09109ED018831C7F0028FF86 /* InfoPlist.strings */; };
 		09109ED418831C7F0028FF86 /* ClassWireTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09109ED318831C7F0028FF86 /* ClassWireTests.m */; };
+		09109EE018831CB50028FF86 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09109EDE18831CB50028FF86 /* HomeViewController.m */; };
+		09109EE118831CB50028FF86 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09109EDF18831CB50028FF86 /* HomeViewController.xib */; };
+		09109EEA188330ED0028FF86 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09109EE8188330ED0028FF86 /* LoginViewController.m */; };
+		09109EEB188330ED0028FF86 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09109EE9188330ED0028FF86 /* LoginViewController.xib */; };
+		09109EEF188331100028FF86 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09109EED188331100028FF86 /* SignUpViewController.m */; };
+		09109EF0188331100028FF86 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09109EEE188331100028FF86 /* SignUpViewController.xib */; };
+		09109EF3188331C70028FF86 /* ErrorHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 09109EF2188331C70028FF86 /* ErrorHandle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,17 @@
 		09109ECF18831C7F0028FF86 /* ClassWireTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClassWireTests-Info.plist"; sourceTree = "<group>"; };
 		09109ED118831C7F0028FF86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		09109ED318831C7F0028FF86 /* ClassWireTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassWireTests.m; sourceTree = "<group>"; };
+		09109EDD18831CB50028FF86 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		09109EDE18831CB50028FF86 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		09109EDF18831CB50028FF86 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		09109EE7188330ED0028FF86 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		09109EE8188330ED0028FF86 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		09109EE9188330ED0028FF86 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		09109EEC188331100028FF86 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		09109EED188331100028FF86 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		09109EEE188331100028FF86 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		09109EF1188331C70028FF86 /* ErrorHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorHandle.h; sourceTree = "<group>"; };
+		09109EF2188331C70028FF86 /* ErrorHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorHandle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +127,12 @@
 			children = (
 				09109EBD18831C7F0028FF86 /* AppDelegate.h */,
 				09109EBE18831C7F0028FF86 /* AppDelegate.m */,
+				09109EDD18831CB50028FF86 /* HomeViewController.h */,
+				09109EDE18831CB50028FF86 /* HomeViewController.m */,
+				09109EDF18831CB50028FF86 /* HomeViewController.xib */,
+				09109EF418833C080028FF86 /* Login/Signup */,
+				09109EF1188331C70028FF86 /* ErrorHandle.h */,
+				09109EF2188331C70028FF86 /* ErrorHandle.m */,
 				09109EC018831C7F0028FF86 /* Images.xcassets */,
 				09109EB518831C7F0028FF86 /* Supporting Files */,
 			);
@@ -142,6 +166,19 @@
 				09109ED018831C7F0028FF86 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09109EF418833C080028FF86 /* Login/Signup */ = {
+			isa = PBXGroup;
+			children = (
+				09109EE7188330ED0028FF86 /* LoginViewController.h */,
+				09109EE8188330ED0028FF86 /* LoginViewController.m */,
+				09109EE9188330ED0028FF86 /* LoginViewController.xib */,
+				09109EEC188331100028FF86 /* SignUpViewController.h */,
+				09109EED188331100028FF86 /* SignUpViewController.m */,
+				09109EEE188331100028FF86 /* SignUpViewController.xib */,
+			);
+			name = Login/Signup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +256,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09109EF0188331100028FF86 /* SignUpViewController.xib in Resources */,
+				09109EEB188330ED0028FF86 /* LoginViewController.xib in Resources */,
 				09109EB918831C7F0028FF86 /* InfoPlist.strings in Resources */,
 				09109EC118831C7F0028FF86 /* Images.xcassets in Resources */,
+				09109EE118831CB50028FF86 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09109EEA188330ED0028FF86 /* LoginViewController.m in Sources */,
+				09109EEF188331100028FF86 /* SignUpViewController.m in Sources */,
+				09109EF3188331C70028FF86 /* ErrorHandle.m in Sources */,
 				09109EBF18831C7F0028FF86 /* AppDelegate.m in Sources */,
 				09109EBB18831C7F0028FF86 /* main.m in Sources */,
+				09109EE018831CB50028FF86 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

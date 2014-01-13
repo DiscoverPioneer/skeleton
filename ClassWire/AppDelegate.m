@@ -7,14 +7,28 @@
 //
 
 #import "AppDelegate.h"
-
 @implementation AppDelegate
+
+//Used for testing purposes to act if the user is already logged in or not
+BOOL loggedin=FALSE;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    self.logInViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+    self.window.rootViewController = self.logInViewController;
+    
+    if(loggedin) {
+        //Logged in, skip the login page and go right to the home screen
+        self.homeViewController = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+        [self.logInViewController presentViewController:self.homeViewController animated:NO completion:nil];
+    }
+    
+
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
