@@ -16,7 +16,7 @@
 - (IBAction)forgotPasswordAction:(id)sender;
 
 
-//Forgotten Password Stuff
+//Forgotten Password Stuff  
 @property (strong, nonatomic) IBOutlet UIView *secondView;
 @property (strong, nonatomic) IBOutlet UITextField *tmpPassword;
 @property (strong, nonatomic) IBOutlet UITextField *createdPassword;
