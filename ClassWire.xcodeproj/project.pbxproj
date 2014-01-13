@@ -26,6 +26,8 @@
 		09109EEF188331100028FF86 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09109EED188331100028FF86 /* SignUpViewController.m */; };
 		09109EF0188331100028FF86 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09109EEE188331100028FF86 /* SignUpViewController.xib */; };
 		09109EF3188331C70028FF86 /* ErrorHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 09109EF2188331C70028FF86 /* ErrorHandle.m */; };
+		FA74768418849E59005EA187 /* CoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA74768218849E59005EA187 /* CoursesViewController.m */; };
+		FA74768518849E59005EA187 /* CoursesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA74768318849E59005EA187 /* CoursesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,9 @@
 		09109EEE188331100028FF86 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		09109EF1188331C70028FF86 /* ErrorHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorHandle.h; sourceTree = "<group>"; };
 		09109EF2188331C70028FF86 /* ErrorHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorHandle.m; sourceTree = "<group>"; };
+		FA74768118849E59005EA187 /* CoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesViewController.h; sourceTree = "<group>"; };
+		FA74768218849E59005EA187 /* CoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesViewController.m; sourceTree = "<group>"; };
+		FA74768318849E59005EA187 /* CoursesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoursesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +130,7 @@
 		09109EB418831C7F0028FF86 /* ClassWire */ = {
 			isa = PBXGroup;
 			children = (
+				FA74768018849E59005EA187 /* Courses */,
 				09109EBD18831C7F0028FF86 /* AppDelegate.h */,
 				09109EBE18831C7F0028FF86 /* AppDelegate.m */,
 				09109EDD18831CB50028FF86 /* HomeViewController.h */,
@@ -179,6 +185,16 @@
 				09109EEE188331100028FF86 /* SignUpViewController.xib */,
 			);
 			name = Login/Signup;
+			sourceTree = "<group>";
+		};
+		FA74768018849E59005EA187 /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				FA74768118849E59005EA187 /* CoursesViewController.h */,
+				FA74768218849E59005EA187 /* CoursesViewController.m */,
+				FA74768318849E59005EA187 /* CoursesViewController.xib */,
+			);
+			path = Courses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +275,7 @@
 				09109EF0188331100028FF86 /* SignUpViewController.xib in Resources */,
 				09109EEB188330ED0028FF86 /* LoginViewController.xib in Resources */,
 				09109EB918831C7F0028FF86 /* InfoPlist.strings in Resources */,
+				FA74768518849E59005EA187 /* CoursesViewController.xib in Resources */,
 				09109EC118831C7F0028FF86 /* Images.xcassets in Resources */,
 				09109EE118831CB50028FF86 /* HomeViewController.xib in Resources */,
 			);
@@ -280,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09109EEA188330ED0028FF86 /* LoginViewController.m in Sources */,
+				FA74768418849E59005EA187 /* CoursesViewController.m in Sources */,
 				09109EEF188331100028FF86 /* SignUpViewController.m in Sources */,
 				09109EF3188331C70028FF86 /* ErrorHandle.m in Sources */,
 				09109EBF18831C7F0028FF86 /* AppDelegate.m in Sources */,
@@ -485,6 +503,7 @@
 				09109ED918831C7F0028FF86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09109EDA18831C7F0028FF86 /* Build configuration list for PBXNativeTarget "ClassWireTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +512,7 @@
 				09109EDC18831C7F0028FF86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
