@@ -167,16 +167,25 @@
     
     // Create Tab Bar VCs
     MessagesViewController *msgVC = [[MessagesViewController alloc] initWithNibName:@"MessagesViewController" bundle:nil];
+    UINavigationController *NVC1 = [[UINavigationController alloc] initWithRootViewController:msgVC];
+    
     CoursesViewController *coursesVC = [[CoursesViewController alloc] initWithNibName:@"CoursesViewController" bundle:nil];
+    UINavigationController *NVC2 = [[UINavigationController alloc] initWithRootViewController:coursesVC];
+    
     NewsFeedViewController *newsVC = [[NewsFeedViewController alloc] initWithNibName:@"NewsFeedViewController" bundle:nil];
+    UINavigationController *NVC3 = [[UINavigationController alloc] initWithRootViewController:newsVC];
+    
     NotificationsViewController *notifVC = [[NotificationsViewController alloc] initWithNibName:@"NotificationsViewController" bundle:nil];
+    UINavigationController *NVC4 = [[UINavigationController alloc] initWithRootViewController:notifVC];
+    
     MoreViewController *moreVC = [[MoreViewController alloc] initWithNibName:@"MoreViewController" bundle:nil];
+    UINavigationController *NVC5 = [[UINavigationController alloc] initWithRootViewController:moreVC];
     
     // Set Tab Bar Titles
     [moreVC.tabBarItem setTitle:@"More"];
     
     // Set Tab Bar VCS
-    NSArray *controllers = [[NSArray alloc] initWithObjects:msgVC, coursesVC, newsVC, notifVC, moreVC, nil];
+    NSArray *controllers = [[NSArray alloc] initWithObjects:NVC1, NVC2, NVC3, NVC4, NVC5, nil];
     [tbc setViewControllers:controllers animated:NO];
     
     // Set "Courses" as starting tab

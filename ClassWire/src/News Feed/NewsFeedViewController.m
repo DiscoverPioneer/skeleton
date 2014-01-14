@@ -30,6 +30,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
+                                                                                 target:nil
+                                                                                 action:nil];
+    self.navigationItem.leftBarButtonItem = leftButton;
 }
 
 - (void)didReceiveMemoryWarning
