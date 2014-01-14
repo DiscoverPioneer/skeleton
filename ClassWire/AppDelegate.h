@@ -14,4 +14,6 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) HomeViewController *homeViewController;
 @property (strong, nonatomic) LoginViewController *logInViewController;
+
+-(void)showTabBar;
 @end

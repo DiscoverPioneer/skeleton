@@ -7,10 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "CoursesViewController.h"
 @implementation AppDelegate
 
 //Used for testing purposes to act if the user is already logged in or not
-BOOL loggedin=FALSE;
+BOOL loggedin=TRUE;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -20,17 +21,30 @@ BOOL loggedin=FALSE;
     
     self.logInViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
     self.window.rootViewController = self.logInViewController;
-    
+    [self.window makeKeyAndVisible];
+
     if(loggedin) {
         //Logged in, skip the login page and go right to the home screen
-        self.homeViewController = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
-        [self.logInViewController presentViewController:self.homeViewController animated:NO completion:nil];
-    }
-    
+        //self.homeViewController = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+        //[self.logInViewController presentViewController:self.homeViewController animated:NO completion:nil];
+        [self showTabBar];
 
-    
-    [self.window makeKeyAndVisible];
+    }
     return YES;
+}
+
+-(void)showTabBar{
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    HomeViewController* vc1 = [[HomeViewController alloc] init];
+    CoursesViewController* vc2 = [[CoursesViewController alloc] init];
+
+    NSArray* controllers = [NSArray arrayWithObjects:vc1,vc2, nil];
+    tabBarController.viewControllers = controllers;
+    
+    // Add the tab bar controller's current view as a subview of the window
+    //[self.window addSubview:tabBarController.view];
+    [self.window setRootViewController:tabBarController];
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

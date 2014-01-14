@@ -20,6 +20,7 @@
     if (self)
     {
         // Custom initialization
+        self.title=@"Courses";
     }
     return self;
 }

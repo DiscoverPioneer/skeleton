@@ -7,7 +7,8 @@
 //
 
 #import "HomeViewController.h"
-
+#import "CoursesViewController.h"
+#import "AppDelegate.h"
 @interface HomeViewController ()
 
 @end
@@ -19,6 +20,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+       self.title=@"Home";
+        
     }
     return self;
 }
@@ -27,7 +30,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {

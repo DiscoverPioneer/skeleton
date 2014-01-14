@@ -10,6 +10,8 @@
 #import "HomeViewController.h"
 #import "SignUpViewController.h"
 #import "ErrorHandle.h"
+#import "CoursesViewController.h"
+#import "AppDelegate.h"
 @interface LoginViewController (){
     ErrorHandle *EH;
     NSString *user;
@@ -86,10 +88,12 @@
             
                     
                //Good to go, lets go to the home screen
-                HomeViewController *HVC = [[HomeViewController alloc]initWithNibName:@"HomeViewController" bundle:nil];
-                HVC.modalTransitionStyle=UIModalTransitionStyleCrossDissolve;
-                [self presentViewController:HVC animated:YES completion:nil];
-                [self.activity stopAnimating];
+                //HomeViewController *HVC = [[HomeViewController alloc]initWithNibName:@"HomeViewController" bundle:nil];
+                //HVC.modalTransitionStyle=UIModalTransitionStyleCrossDissolve;
+                //[self presentViewController:HVC animated:YES completion:nil];
+            
+            [self showTabBar];
+            [self.activity stopAnimating];
                 self.signupOutlet.userInteractionEnabled=YES;
                 self.loginOutlet.userInteractionEnabled=YES;
                 self.forgotPasswordOutlet.userInteractionEnabled=YES;
@@ -103,18 +107,21 @@
             self.login2Outlet.userInteractionEnabled=NO;
             [self.activity startAnimating];
             //Good to go, lets go to the homescreen
-            HomeViewController *HVC = [[HomeViewController alloc]initWithNibName:@"HomeViewController" bundle:nil];
+            //HomeViewController *HVC = [[HomeViewController alloc]initWithNibName:@"HomeViewController" bundle:nil];
             [self.activity stopAnimating];
             self.login2Outlet.userInteractionEnabled=YES;
 
-            HVC.modalTransitionStyle=UIModalTransitionStyleCrossDissolve;
-            [self presentViewController:HVC animated:YES completion:nil];
+            //HVC.modalTransitionStyle=UIModalTransitionStyleCrossDissolve;
+            //[self presentViewController:HVC animated:YES completion:nil];
+            [self showTabBar];
             [self.secondView removeFromSuperview];
       
         }
     }
     
 }
+
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return NO;
@@ -147,5 +154,10 @@
         //Show the view for forgetting passwords
         [self.view addSubview:self.secondView];   
     }
+}
+
+-(void)showTabBar{
+    AppDelegate *ad=[[UIApplication sharedApplication] delegate];
+    [ad showTabBar];
 }
 @end

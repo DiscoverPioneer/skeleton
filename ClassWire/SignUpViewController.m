@@ -10,6 +10,8 @@
 
 #import "HomeViewController.h"
 #import "ErrorHandle.h"
+#import "CoursesViewController.h"
+#import "AppDelegate.h"
 @interface SignUpViewController (){
     ErrorHandle *EH;
     NSMutableArray *textFieldArray;
@@ -52,7 +54,7 @@
     //CheckFields first
     if([self checkFields]){
     
-        [self login];
+        [self showTabBar];
 
     }
     
@@ -91,4 +93,8 @@
     
 }
 
+-(void)showTabBar{
+    AppDelegate *ad=[[UIApplication sharedApplication] delegate];
+    [ad showTabBar];
+}
 @end
