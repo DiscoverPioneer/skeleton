@@ -11,8 +11,8 @@
 
 @implementation AppDelegate
 
-//Used for testing purposes to act if the user is already logged in or not
-BOOL loggedin=FALSE;
+// Used for testing purposes to act if the user is already logged in or not
+BOOL loggedin = FALSE;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
