@@ -166,14 +166,9 @@
     NotificationsViewController *notifVC = [[NotificationsViewController alloc] initWithNibName:@"NotificationsViewController" bundle:nil];
     MoreViewController *moreVC = [[MoreViewController alloc] initWithNibName:@"MoreViewController" bundle:nil];
     
-    /*
     // Set Tab Bar Titles
-    [msgVC.tabBarItem setTitle:@"Messages"];
-    [coursesVC.tabBarItem setTitle:@"Courses"];
-    [newsVC.tabBarItem setTitle:@"News Feed"];
-    [notifVC.tabBarItem setTitle:@"Notifications"];
     [moreVC.tabBarItem setTitle:@"More"];
-    */
+    
     // Set Tab Bar VCS
     NSArray *controllers = [[NSArray alloc] initWithObjects:msgVC, coursesVC, newsVC, notifVC, moreVC, nil];
     [tbc setViewControllers:controllers animated:NO];

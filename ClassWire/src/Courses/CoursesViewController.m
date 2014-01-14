@@ -19,8 +19,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self)
     {
-        self.title=@"Courses";
         // Custom initialization
+        self.title = @"Courses";
     }
     return self;
 }

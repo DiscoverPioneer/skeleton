@@ -28,12 +28,12 @@
 		FA7476B11884A2D6005EA187 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7476951884A2D6005EA187 /* SignUpViewController.xib */; };
 		FA7476B21884A2D6005EA187 /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7476981884A2D6005EA187 /* MessagesViewController.m */; };
 		FA7476B31884A2D6005EA187 /* MessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7476991884A2D6005EA187 /* MessagesViewController.xib */; };
-		FA7476B41884A2D6005EA187 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA74769C1884A2D6005EA187 /* MoreViewController.m */; };
-		FA7476B51884A2D6005EA187 /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA74769D1884A2D6005EA187 /* MoreViewController.xib */; };
 		FA7476B61884A2D6005EA187 /* NewsFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7476A01884A2D6005EA187 /* NewsFeedViewController.m */; };
 		FA7476B71884A2D6005EA187 /* NewsFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7476A11884A2D6005EA187 /* NewsFeedViewController.xib */; };
 		FA7476B81884A2D6005EA187 /* NotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7476A41884A2D6005EA187 /* NotificationsViewController.m */; };
 		FA7476B91884A2D6005EA187 /* NotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7476A51884A2D6005EA187 /* NotificationsViewController.xib */; };
+		FA7476C41884EC53005EA187 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7476C21884EC53005EA187 /* MoreViewController.m */; };
+		FA7476C51884EC53005EA187 /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7476C31884EC53005EA187 /* MoreViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,15 +77,15 @@
 		FA7476971884A2D6005EA187 /* MessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
 		FA7476981884A2D6005EA187 /* MessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
 		FA7476991884A2D6005EA187 /* MessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessagesViewController.xib; sourceTree = "<group>"; };
-		FA74769B1884A2D6005EA187 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
-		FA74769C1884A2D6005EA187 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
-		FA74769D1884A2D6005EA187 /* MoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
 		FA74769F1884A2D6005EA187 /* NewsFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsFeedViewController.h; sourceTree = "<group>"; };
 		FA7476A01884A2D6005EA187 /* NewsFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFeedViewController.m; sourceTree = "<group>"; };
 		FA7476A11884A2D6005EA187 /* NewsFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsFeedViewController.xib; sourceTree = "<group>"; };
 		FA7476A31884A2D6005EA187 /* NotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationsViewController.h; sourceTree = "<group>"; };
 		FA7476A41884A2D6005EA187 /* NotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationsViewController.m; sourceTree = "<group>"; };
 		FA7476A51884A2D6005EA187 /* NotificationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationsViewController.xib; sourceTree = "<group>"; };
+		FA7476C11884EC53005EA187 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		FA7476C21884EC53005EA187 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		FA7476C31884EC53005EA187 /* MoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,8 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				FA74768F1884A2D6005EA187 /* Login:Signup */,
-				FA7476871884A2D6005EA187 /* Courses */,
 				FA7476961884A2D6005EA187 /* Messages */,
+				FA7476871884A2D6005EA187 /* Courses */,
 				FA74769E1884A2D6005EA187 /* News Feed */,
 				FA7476A21884A2D6005EA187 /* Notifications */,
 				FA74769A1884A2D6005EA187 /* More */,
@@ -234,9 +234,9 @@
 		FA74769A1884A2D6005EA187 /* More */ = {
 			isa = PBXGroup;
 			children = (
-				FA74769B1884A2D6005EA187 /* MoreViewController.h */,
-				FA74769C1884A2D6005EA187 /* MoreViewController.m */,
-				FA74769D1884A2D6005EA187 /* MoreViewController.xib */,
+				FA7476C11884EC53005EA187 /* MoreViewController.h */,
+				FA7476C21884EC53005EA187 /* MoreViewController.m */,
+				FA7476C31884EC53005EA187 /* MoreViewController.xib */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -339,11 +339,11 @@
 				FA7476AF1884A2D6005EA187 /* LoginViewController.xib in Resources */,
 				FA7476B91884A2D6005EA187 /* NotificationsViewController.xib in Resources */,
 				FA7476B71884A2D6005EA187 /* NewsFeedViewController.xib in Resources */,
-				FA7476B51884A2D6005EA187 /* MoreViewController.xib in Resources */,
 				FA7476AB1884A2D6005EA187 /* CoursesViewController.xib in Resources */,
 				09109EB918831C7F0028FF86 /* InfoPlist.strings in Resources */,
 				FA7476B31884A2D6005EA187 /* MessagesViewController.xib in Resources */,
 				09109EC118831C7F0028FF86 /* Images.xcassets in Resources */,
+				FA7476C51884EC53005EA187 /* MoreViewController.xib in Resources */,
 				FA7476B11884A2D6005EA187 /* SignUpViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,10 +369,10 @@
 				FA7476B21884A2D6005EA187 /* MessagesViewController.m in Sources */,
 				FA7476B61884A2D6005EA187 /* NewsFeedViewController.m in Sources */,
 				FA7476AE1884A2D6005EA187 /* LoginViewController.m in Sources */,
-				FA7476B41884A2D6005EA187 /* MoreViewController.m in Sources */,
 				09109EBF18831C7F0028FF86 /* AppDelegate.m in Sources */,
 				FA7476B01884A2D6005EA187 /* SignUpViewController.m in Sources */,
 				09109EBB18831C7F0028FF86 /* main.m in Sources */,
+				FA7476C41884EC53005EA187 /* MoreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
