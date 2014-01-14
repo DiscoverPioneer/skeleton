@@ -16,17 +16,20 @@
 - (IBAction)forgotPasswordAction:(id)sender;
 
 
-//Forgotten Password Stuff  
+// Forgotten Password Stuff
 @property (strong, nonatomic) IBOutlet UIView *secondView;
 @property (strong, nonatomic) IBOutlet UITextField *tmpPassword;
 @property (strong, nonatomic) IBOutlet UITextField *createdPassword;
 
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activity;
 
-//Outlets
+// Outlets
 @property (strong, nonatomic) IBOutlet UIButton *signupOutlet;
 @property (strong, nonatomic) IBOutlet UIButton *loginOutlet;
 @property (strong, nonatomic) IBOutlet UIButton *forgotPasswordOutlet;
 @property (strong, nonatomic) IBOutlet UIButton *login2Outlet;
+
+// TabBar
++ (UITabBarController *)createTabBarController;
 
 @end

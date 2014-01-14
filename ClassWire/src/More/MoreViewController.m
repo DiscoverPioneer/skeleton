@@ -1,18 +1,18 @@
 //
-//  HomeViewController.m
-//  ClassWire
+//  MoreViewController.m
+//  ClassWireTest
 //
-//  Created by Phil Scarfi on 1/12/14.
-//  Copyright (c) 2014 ClassWire INC. All rights reserved.
+//  Created by Alex Koshy on 1/12/14.
+//  Copyright (c) 2014 KoshyDev. All rights reserved.
 //
 
-#import "HomeViewController.h"
+#import "MoreViewController.h"
 
-@interface HomeViewController ()
+@interface MoreViewController ()
 
 @end
 
-@implementation HomeViewController
+@implementation MoreViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

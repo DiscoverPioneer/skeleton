@@ -7,11 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HomeViewController.h"
 #import "LoginViewController.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) HomeViewController *homeViewController;
 @property (strong, nonatomic) LoginViewController *logInViewController;
 @end

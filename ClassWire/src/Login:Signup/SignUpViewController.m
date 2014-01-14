@@ -7,9 +7,9 @@
 //
 
 #import "SignUpViewController.h"
-
-#import "HomeViewController.h"
+#import "LoginViewController.h"
 #import "ErrorHandle.h"
+
 @interface SignUpViewController (){
     ErrorHandle *EH;
     NSMutableArray *textFieldArray;
@@ -50,12 +50,9 @@
 
 - (IBAction)goAction:(id)sender {
     //CheckFields first
-    if([self checkFields]){
-    
+    if([self checkFields]) {
         [self login];
-
     }
-    
 }
 
 -(BOOL)checkFields{
@@ -81,14 +78,33 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
--(void)login{
+-(void)login {
+    NSLog(@"Successfully Logged In");
     
-        NSLog(@"Successfully Logged In");
     //Good to go, go to home screen
-        HomeViewController *HVC = [[HomeViewController alloc]initWithNibName:@"HomeViewController" bundle:nil];
-        HVC.modalTransitionStyle=UIModalTransitionStyleCrossDissolve;
-        [self presentViewController:HVC animated:YES completion:nil];
+    /*/ Phil's Code
+    HomeViewController *HVC = [[HomeViewController alloc]initWithNibName:@"HomeViewController" bundle:nil];
+    HVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:HVC animated:YES completion:nil];
+    // */
+    
+    // Alex's additions
+    [self presentViewController:[LoginViewController createTabBarController] animated:YES completion:nil];
     
 }
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+

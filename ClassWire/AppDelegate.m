@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "LoginViewController.h"
+
 @implementation AppDelegate
 
 //Used for testing purposes to act if the user is already logged in or not
@@ -22,12 +24,17 @@ BOOL loggedin=FALSE;
     self.window.rootViewController = self.logInViewController;
     
     if(loggedin) {
+        /*/ Phil's Code
         //Logged in, skip the login page and go right to the home screen
         self.homeViewController = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
         [self.logInViewController presentViewController:self.homeViewController animated:NO completion:nil];
+        // */
+        
+        // Alex's Addition
+        UITabBarController *tbc = [LoginViewController createTabBarController];
+        self.window.rootViewController = tbc;
+        [self.window addSubview:tbc.view];
     }
-    
-
     
     [self.window makeKeyAndVisible];
     return YES;
