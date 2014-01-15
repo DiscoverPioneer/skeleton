@@ -136,6 +136,25 @@
     }
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    NSString *sectionName;
+    switch (section)
+    {
+        case 0:
+            sectionName = NSLocalizedString(@"Me", @"Me");
+            break;
+        case 1:
+            sectionName = NSLocalizedString(@"ClassWire", @"ClassWire");
+            break;
+            // ...
+        default:
+            sectionName = @"";
+            break;
+    }
+    return sectionName;
+}
+
 - (void)logOut
 {
     // Function to be called by "Log Out" button on action sheet
