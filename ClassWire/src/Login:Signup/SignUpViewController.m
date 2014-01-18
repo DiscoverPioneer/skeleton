@@ -9,9 +9,10 @@
 #import "SignUpViewController.h"
 #import "LoginViewController.h"
 #import "ErrorHandle.h"
-
+#import "CredentialCheck.h"
 @interface SignUpViewController (){
     ErrorHandle *EH;
+    CredentialCheck *CC;
     NSMutableArray *textFieldArray;
 
 }
@@ -34,6 +35,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     EH =  [[ErrorHandle alloc]init];
+    CC =[[CredentialCheck alloc]init];
     textFieldArray = [[NSMutableArray alloc]init];
     [textFieldArray addObject:self.password];
     [textFieldArray addObject:self.email];
@@ -50,8 +52,11 @@
 
 - (IBAction)goAction:(id)sender {
     //CheckFields first
-    if([self checkFields]) {
+    if([self checkFields] && [CC checkLogin:self.email.text] && [CC checkPassword:self.password.text]) {
         [self login];
+    }
+    else{
+        [EH showAlert:@"Make Sure your password has atleast 8 characters, and you're using a university email"];
     }
 }
 

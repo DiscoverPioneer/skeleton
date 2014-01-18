@@ -20,6 +20,7 @@
 		09109ED218831C7F0028FF86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09109ED018831C7F0028FF86 /* InfoPlist.strings */; };
 		09109ED418831C7F0028FF86 /* ClassWireTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09109ED318831C7F0028FF86 /* ClassWireTests.m */; };
 		09109EF3188331C70028FF86 /* ErrorHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 09109EF2188331C70028FF86 /* ErrorHandle.m */; };
+		09ED72C71889D8A000257CDF /* CredentialCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ED72C61889D8A000257CDF /* CredentialCheck.m */; };
 		FA7476AA1884A2D6005EA187 /* CoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7476891884A2D6005EA187 /* CoursesViewController.m */; };
 		FA7476AB1884A2D6005EA187 /* CoursesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA74768A1884A2D6005EA187 /* CoursesViewController.xib */; };
 		FA7476AE1884A2D6005EA187 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7476911884A2D6005EA187 /* LoginViewController.m */; };
@@ -65,6 +66,8 @@
 		09109ED318831C7F0028FF86 /* ClassWireTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassWireTests.m; sourceTree = "<group>"; };
 		09109EF1188331C70028FF86 /* ErrorHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorHandle.h; sourceTree = "<group>"; };
 		09109EF2188331C70028FF86 /* ErrorHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorHandle.m; sourceTree = "<group>"; };
+		09ED72C51889D8A000257CDF /* CredentialCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CredentialCheck.h; sourceTree = "<group>"; };
+		09ED72C61889D8A000257CDF /* CredentialCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CredentialCheck.m; sourceTree = "<group>"; };
 		FA7476881884A2D6005EA187 /* CoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesViewController.h; sourceTree = "<group>"; };
 		FA7476891884A2D6005EA187 /* CoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesViewController.m; sourceTree = "<group>"; };
 		FA74768A1884A2D6005EA187 /* CoursesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoursesViewController.xib; sourceTree = "<group>"; };
@@ -217,6 +220,8 @@
 				FA7476931884A2D6005EA187 /* SignUpViewController.h */,
 				FA7476941884A2D6005EA187 /* SignUpViewController.m */,
 				FA7476951884A2D6005EA187 /* SignUpViewController.xib */,
+				09ED72C51889D8A000257CDF /* CredentialCheck.h */,
+				09ED72C61889D8A000257CDF /* CredentialCheck.m */,
 			);
 			path = "Login:Signup";
 			sourceTree = "<group>";
@@ -372,6 +377,7 @@
 				09109EBF18831C7F0028FF86 /* AppDelegate.m in Sources */,
 				FA7476B01884A2D6005EA187 /* SignUpViewController.m in Sources */,
 				09109EBB18831C7F0028FF86 /* main.m in Sources */,
+				09ED72C71889D8A000257CDF /* CredentialCheck.m in Sources */,
 				FA7476C41884EC53005EA187 /* MoreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

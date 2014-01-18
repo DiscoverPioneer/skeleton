@@ -14,9 +14,10 @@
 #import "MoreViewController.h"
 #import "SignUpViewController.h"
 #import "ErrorHandle.h"
-
+#import "CredentialCheck.h"
 @interface LoginViewController (){
     ErrorHandle *EH;
+    CredentialCheck *CC;
     NSString *user;
 }
 
@@ -41,6 +42,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     EH =  [[ErrorHandle alloc]init];
+    CC = [[CredentialCheck alloc]init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -92,8 +94,8 @@
     // Check if login is for reseting the password section or just a regular login
     if(![self.secondView isDescendantOfView:self.view]) // Regular Login
     {
-        if([self checkFields])
-        {
+        if([self checkFields] && [CC checkLogin:self.userName.text] && [CC checkPassword:self.password.text]) {
+        
             self.signupOutlet.userInteractionEnabled = NO;
             self.loginOutlet.userInteractionEnabled = NO;
             self.forgotPasswordOutlet.userInteractionEnabled = NO;
@@ -116,11 +118,15 @@
             self.loginOutlet.userInteractionEnabled = YES;
             self.forgotPasswordOutlet.userInteractionEnabled = YES;
         }
+        else{
+            [EH showAlert:@"Make Sure your password has atleast 8 characters, and you're using a university email"];
+
+        }
     }
     else //login and reset password
     {
-        if ([self checkFields])
-        {
+        if([self checkFields] && [CC checkPassword:self.createdPassword.text]) {
+
             self.login2Outlet.userInteractionEnabled = NO;
             [self.activity startAnimating];
             //Good to go, lets go to the homescreen
@@ -137,6 +143,9 @@
             
             [self presentViewController:tbc animated:YES completion:nil];
             [self.secondView removeFromSuperview];
+        }
+        else{
+            [EH showAlert:@"Make Sure your new password has atleast 8 characters"];
         }
     }
 }
