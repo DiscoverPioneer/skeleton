@@ -10,4 +10,6 @@
 
 @interface CoursesViewController : UIViewController
 
+- (IBAction)didChooseCourse:(UIButton *)sender;
+
 @end

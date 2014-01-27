@@ -85,7 +85,7 @@
 - (IBAction)signUpAction:(id)sender {
     //No Account, go to Sign Up Page
     SignUpViewController *HVC = [[SignUpViewController alloc]initWithNibName:@"SignUpViewController" bundle:nil];
-    HVC.modalTransitionStyle=UIModalTransitionStyleCrossDissolve;
+    HVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self presentViewController:HVC animated:YES completion:nil];
 
 }
@@ -144,7 +144,7 @@
             [self presentViewController:tbc animated:YES completion:nil];
             [self.secondView removeFromSuperview];
         }
-        else{
+        else {
             [EH showAlert:@"Make Sure your new password has atleast 8 characters"];
         }
     }
