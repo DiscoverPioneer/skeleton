@@ -7,7 +7,7 @@
 //
 
 #import "MoreViewController.h"
-
+#import "ProfileViewController.h"
 @interface MoreViewController ()
 {
     NSArray *section1;
@@ -84,6 +84,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+
     switch (indexPath.section)
     {
         case 0: // First Section of menu items
@@ -92,6 +93,8 @@
                 case 0: // View Profile
                     // Navigate to ProfilePageViewController
                     [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
+                    [self loadProfile];
+
                     break;
                 case 1: // Manage Friends
                     // Navigate to FriendsListViewController
@@ -192,6 +195,11 @@
         [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
 }
 
+
+-(void)loadProfile{
+    ProfileViewController *PVC = [[ProfileViewController alloc]init];
+    [self.navigationController pushViewController:PVC animated:YES];
+}
 @end
 
 

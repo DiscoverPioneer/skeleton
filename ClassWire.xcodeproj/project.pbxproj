@@ -20,6 +20,9 @@
 		09109ED218831C7F0028FF86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09109ED018831C7F0028FF86 /* InfoPlist.strings */; };
 		09109ED418831C7F0028FF86 /* ClassWireTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09109ED318831C7F0028FF86 /* ClassWireTests.m */; };
 		09109EF3188331C70028FF86 /* ErrorHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 09109EF2188331C70028FF86 /* ErrorHandle.m */; };
+		09D3F6111898AD5E00F90042 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D3F60F1898AD5E00F90042 /* ProfileViewController.m */; };
+		09D3F6121898AD5E00F90042 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D3F6101898AD5E00F90042 /* ProfileViewController.xib */; };
+		09D3F6141898BF5300F90042 /* lax.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09D3F6131898BF5300F90042 /* lax.jpg */; };
 		FA75D5AC1896015D0038753E /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = FA75D5881896015D0038753E /* Course.m */; };
 		FA75D5AE1896015D0038753E /* CredentialCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = FA75D58F1896015D0038753E /* CredentialCheck.m */; };
 		FA75D5AF1896015D0038753E /* CoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA75D5931896015D0038753E /* CoursesViewController.m */; };
@@ -71,6 +74,10 @@
 		09109ED318831C7F0028FF86 /* ClassWireTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassWireTests.m; sourceTree = "<group>"; };
 		09109EF1188331C70028FF86 /* ErrorHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorHandle.h; sourceTree = "<group>"; };
 		09109EF2188331C70028FF86 /* ErrorHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorHandle.m; sourceTree = "<group>"; };
+		09D3F60E1898AD5E00F90042 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = ../Notifications/ProfileViewController.h; sourceTree = "<group>"; };
+		09D3F60F1898AD5E00F90042 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = ../Notifications/ProfileViewController.m; sourceTree = "<group>"; };
+		09D3F6101898AD5E00F90042 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProfileViewController.xib; path = ../Notifications/ProfileViewController.xib; sourceTree = "<group>"; };
+		09D3F6131898BF5300F90042 /* lax.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lax.jpg; sourceTree = "<group>"; };
 		FA75D5871896015D0038753E /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
 		FA75D5881896015D0038753E /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		FA75D58E1896015D0038753E /* CredentialCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CredentialCheck.h; sourceTree = "<group>"; };
@@ -168,6 +175,7 @@
 				09109EF2188331C70028FF86 /* ErrorHandle.m */,
 				FA75D5841896015D0038753E /* src */,
 				09109EC018831C7F0028FF86 /* Images.xcassets */,
+				09D3F6131898BF5300F90042 /* lax.jpg */,
 				09109EB518831C7F0028FF86 /* Supporting Files */,
 			);
 			path = ClassWire;
@@ -200,6 +208,16 @@
 				09109ED018831C7F0028FF86 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09D3F6151898CB7800F90042 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				09D3F60E1898AD5E00F90042 /* ProfileViewController.h */,
+				09D3F60F1898AD5E00F90042 /* ProfileViewController.m */,
+				09D3F6101898AD5E00F90042 /* ProfileViewController.xib */,
+			);
+			name = ProfileView;
 			sourceTree = "<group>";
 		};
 		FA75D5841896015D0038753E /* src */ = {
@@ -303,6 +321,7 @@
 				FA75D5A11896015D0038753E /* MoreViewController.h */,
 				FA75D5A21896015D0038753E /* MoreViewController.m */,
 				FA75D5A31896015D0038753E /* MoreViewController.xib */,
+				09D3F6151898CB7800F90042 /* ProfileView */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -424,8 +443,10 @@
 				FA75D5B61896015D0038753E /* MessagesViewController.xib in Resources */,
 				FA75D5B41896015D0038753E /* SignUpViewController.xib in Resources */,
 				FA75D5C9189614BD0038753E /* CourseDetailViewController.xib in Resources */,
+				09D3F6141898BF5300F90042 /* lax.jpg in Resources */,
 				FA75D5B21896015D0038753E /* LoginViewController.xib in Resources */,
 				FA75D5BA1896015D0038753E /* NewsFeedViewController.xib in Resources */,
+				09D3F6121898AD5E00F90042 /* ProfileViewController.xib in Resources */,
 				FA75D5B01896015D0038753E /* CoursesViewController.xib in Resources */,
 				FA75D5B81896015D0038753E /* MoreViewController.xib in Resources */,
 				FA75D5BC1896015D0038753E /* NotificationsViewController.xib in Resources */,
@@ -451,6 +472,7 @@
 			files = (
 				FA75D5B11896015D0038753E /* LoginViewController.m in Sources */,
 				FA75D5AC1896015D0038753E /* Course.m in Sources */,
+				09D3F6111898AD5E00F90042 /* ProfileViewController.m in Sources */,
 				FA75D5AF1896015D0038753E /* CoursesViewController.m in Sources */,
 				09109EF3188331C70028FF86 /* ErrorHandle.m in Sources */,
 				09109EBF18831C7F0028FF86 /* AppDelegate.m in Sources */,
