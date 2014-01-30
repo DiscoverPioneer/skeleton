@@ -22,6 +22,7 @@
     if (self) {
         // Custom initialization
         self.title = @"Details";
+        
     }
     return self;
 }
