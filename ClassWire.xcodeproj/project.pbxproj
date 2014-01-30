@@ -40,9 +40,9 @@
 		FA75D5BB1896015D0038753E /* NotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA75D5AA1896015D0038753E /* NotificationsViewController.m */; };
 		FA75D5BC1896015D0038753E /* NotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA75D5AB1896015D0038753E /* NotificationsViewController.xib */; };
 		FA75D5BF189601950038753E /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = FA75D5BE189601950038753E /* Department.m */; };
-		FA75D5C31896113F0038753E /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = FA75D5C21896113F0038753E /* Section.m */; };
 		FA75D5C8189614BD0038753E /* CourseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA75D5C6189614BD0038753E /* CourseDetailViewController.m */; };
 		FA75D5C9189614BD0038753E /* CourseDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA75D5C7189614BD0038753E /* CourseDetailViewController.xib */; };
+		FAD5713A189A0A5800C7C655 /* LoginViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD57139189A0A5800C7C655 /* LoginViewController2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,11 +105,10 @@
 		FA75D5AB1896015D0038753E /* NotificationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationsViewController.xib; sourceTree = "<group>"; };
 		FA75D5BD189601950038753E /* Department.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Department.h; sourceTree = "<group>"; };
 		FA75D5BE189601950038753E /* Department.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Department.m; sourceTree = "<group>"; };
-		FA75D5C11896113F0038753E /* Section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section.h; path = Section/Section.h; sourceTree = "<group>"; };
-		FA75D5C21896113F0038753E /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section.m; path = Section/Section.m; sourceTree = "<group>"; };
 		FA75D5C5189614BD0038753E /* CourseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CourseDetailViewController.h; path = CourseDetail/CourseDetailViewController.h; sourceTree = "<group>"; };
 		FA75D5C6189614BD0038753E /* CourseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CourseDetailViewController.m; path = CourseDetail/CourseDetailViewController.m; sourceTree = "<group>"; };
 		FA75D5C7189614BD0038753E /* CourseDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CourseDetailViewController.xib; path = CourseDetail/CourseDetailViewController.xib; sourceTree = "<group>"; };
+		FAD57139189A0A5800C7C655 /* LoginViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,7 +243,6 @@
 			children = (
 				FA75D5871896015D0038753E /* Course.h */,
 				FA75D5881896015D0038753E /* Course.m */,
-				FA75D5C0189611170038753E /* Section */,
 			);
 			name = Course;
 			path = Courses;
@@ -272,11 +270,11 @@
 			isa = PBXGroup;
 			children = (
 				FA75D5951896015D0038753E /* Login:Signup */,
-				FA75D5911896015D0038753E /* Courses */,
 				FA75D59C1896015D0038753E /* Messages */,
-				FA75D5A01896015D0038753E /* More */,
+				FA75D5911896015D0038753E /* Courses */,
 				FA75D5A41896015D0038753E /* News Feed */,
 				FA75D5A81896015D0038753E /* Notifications */,
+				FA75D5A01896015D0038753E /* More */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -298,6 +296,7 @@
 				FA75D5961896015D0038753E /* LoginViewController.h */,
 				FA75D5971896015D0038753E /* LoginViewController.m */,
 				FA75D5981896015D0038753E /* LoginViewController.xib */,
+				FAD57139189A0A5800C7C655 /* LoginViewController2.xib */,
 				FA75D5991896015D0038753E /* SignUpViewController.h */,
 				FA75D59A1896015D0038753E /* SignUpViewController.m */,
 				FA75D59B1896015D0038753E /* SignUpViewController.xib */,
@@ -344,15 +343,6 @@
 				FA75D5AB1896015D0038753E /* NotificationsViewController.xib */,
 			);
 			path = Notifications;
-			sourceTree = "<group>";
-		};
-		FA75D5C0189611170038753E /* Section */ = {
-			isa = PBXGroup;
-			children = (
-				FA75D5C11896113F0038753E /* Section.h */,
-				FA75D5C21896113F0038753E /* Section.m */,
-			);
-			name = Section;
 			sourceTree = "<group>";
 		};
 		FA75D5C41896148E0038753E /* CourseDetail */ = {
@@ -441,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA75D5B61896015D0038753E /* MessagesViewController.xib in Resources */,
+				FAD5713A189A0A5800C7C655 /* LoginViewController2.xib in Resources */,
 				FA75D5B41896015D0038753E /* SignUpViewController.xib in Resources */,
 				FA75D5C9189614BD0038753E /* CourseDetailViewController.xib in Resources */,
 				09D3F6141898BF5300F90042 /* lax.jpg in Resources */,
@@ -482,7 +473,6 @@
 				FA75D5AE1896015D0038753E /* CredentialCheck.m in Sources */,
 				FA75D5B71896015D0038753E /* MoreViewController.m in Sources */,
 				FA75D5B31896015D0038753E /* SignUpViewController.m in Sources */,
-				FA75D5C31896113F0038753E /* Section.m in Sources */,
 				FA75D5B91896015D0038753E /* NewsFeedViewController.m in Sources */,
 				FA75D5C8189614BD0038753E /* CourseDetailViewController.m in Sources */,
 				FA75D5BF189601950038753E /* Department.m in Sources */,

@@ -16,9 +16,8 @@
 // Stored as NSString because of possibility of character additions - Ex. CS 197C
 @property (nonatomic, strong) NSString *courseNumber;
 @property (nonatomic, strong) NSString *courseTitle;
-@property (nonatomic, strong) NSString *prof;
+@property (nonatomic, strong) NSString *professor;
 @property (nonatomic, strong) Department *dept;
-@property (nonatomic, strong) Section *section;
 @property (nonatomic, strong) NSString *semester;
 @property (nonatomic, assign) NSInteger year;
 // Include Uploaded Material Object Here
@@ -29,7 +28,6 @@
                      title:(NSString *)title
                       prof:(NSString *)prof
                       dept:(Department *)dept
-                   section:(Section *)section
                   semester:(NSString *)sem
                       year:(NSInteger)year;
 

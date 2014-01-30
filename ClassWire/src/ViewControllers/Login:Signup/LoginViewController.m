@@ -221,6 +221,15 @@
     return NO;
 }
 
+// *** FOR TESTING PURPOSES ONLY - TO BE REMOVED
+- (IBAction)skipLoginAction:(id)sender {
+    UITabBarController *tbc = [LoginViewController createTabBarController];
+    [self.activity stopAnimating];
+    self.login2Outlet.userInteractionEnabled = YES;
+    
+    [self presentViewController:tbc animated:YES completion:nil];
+}
+
 @end
 
 

@@ -32,4 +32,7 @@
 // TabBar
 + (UITabBarController *)createTabBarController;
 
+// *** Temporary skip credentials action for teating
+- (IBAction)skipLoginAction:(id)sender;
+
 @end

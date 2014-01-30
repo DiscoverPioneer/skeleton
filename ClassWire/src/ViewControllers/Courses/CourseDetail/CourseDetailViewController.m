@@ -9,7 +9,6 @@
 #import "CourseDetailViewController.h"
 #import "Course.h"
 #import "Department.h"
-#import "Section.h"
 
 @interface CourseDetailViewController ()
 
@@ -34,6 +33,9 @@
     
     self.courseName.text = [self.course getCourseName];
     self.courseTitle.text = self.course.courseTitle;
+    self.semester.text = self.course.semester;
+    self.year.text = [NSString stringWithFormat:@"%li", (long)self.course.year];
+    self.professor.text = self.course.professor;
 }
 
 - (void)didReceiveMemoryWarning

@@ -10,7 +10,6 @@
 #import "CourseDetailViewController.h"
 #import "Course.h"
 #import "Department.h"
-#import "Section.h"
 
 @interface CoursesViewController ()
 
@@ -53,14 +52,12 @@
                                                  abbr:@"CS"];
     Department *stats = [[Department alloc] initWithName:@"Statistics"
                                                     abbr:@"Stats"];
-    Section *section1 = [[Section alloc] init];
     switch (sender.tag) {
         case 1:
             c = [[Course alloc] initWithNumber:@"230"
                                          title:@"Computer Systems Principles"
                                           prof:@"Tim Richards"
                                           dept:cs
-                                       section:section1
                                       semester:@"Spring"
                                           year:2014];
             break;
@@ -69,7 +66,6 @@
                                          title:@"Reasoning Under Uncertainty"
                                           prof:@"Andrew McGregor"
                                           dept:cs
-                                       section:section1
                                       semester:@"Spring"
                                           year:2014];
             break;
@@ -78,7 +74,6 @@
                                          title:@"Intro to Algorithms"
                                           prof:@"Ramesh Siataraman"
                                           dept:cs
-                                       section:section1
                                       semester:@"Spring"
                                           year:2014];
             break;
@@ -87,7 +82,6 @@
                                          title:@"Statistics I"
                                           prof:@"Erin Conlon"
                                           dept:stats
-                                       section:section1
                                       semester:@"Spring"
                                           year:2014];
             break;

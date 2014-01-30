@@ -20,7 +20,8 @@ BOOL loggedin = FALSE;
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-    self.logInViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+    // *** changed login xib here
+    self.logInViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController2" bundle:nil];
     self.window.rootViewController = self.logInViewController;
     
     if(loggedin) {

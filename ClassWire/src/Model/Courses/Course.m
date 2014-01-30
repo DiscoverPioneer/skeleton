@@ -8,7 +8,6 @@
 
 #import "Course.h"
 #import "Department.h"
-#import "Section.h"
 
 @implementation Course
 
@@ -19,9 +18,8 @@
     {
         self.courseNumber = @"";
         self.courseTitle = @"";
-        self.prof = @"";
+        self.professor = @"";
         self.dept = [[Department alloc] init];
-        self.section = [[Section alloc] init];
         self.semester = @"";
         self.year = 0;
     }
@@ -32,7 +30,6 @@
                      title:(NSString *)title
                       prof:(NSString *)prof
                       dept:(Department *)dept
-                   section:(Section *)section
                   semester:(NSString *)sem
                       year:(NSInteger)year
 {
@@ -41,9 +38,8 @@
     {
         self.courseNumber = num;
         self.courseTitle = title;
-        self.prof = prof;
+        self.professor = prof;
         self.dept = dept;
-        self.section = section;
         self.semester = sem;
         self.year = year;
     }
